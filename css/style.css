@@ -93,10 +93,51 @@ h1
 	text-shadow:3px 3px 3px #222;
 }
 
+.info
+{
+	width:300px;
+	padding:20px;
+	text-align: center;
+	font-size: 16px;
+	font-family: 'Verdana', sans-serif !important;
+	color:white;
+	display: inline-block;
+}
+.info img
+{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	background-color: #e74c3c;
+	border-radius: 2000px;
+	width:100px;
+	padding: 20px;
+}
 
-.s1 img
+.s1
+{
+	text-align: center;
+}
+
+.code
+{
+	float: left;
+}
+
+.college
+{
+	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.idea
 {
 	float:right;
-	display:inline-block;
-	vertical-align: middle;
+}
+
+/*Used to style project image headers*/
+.og-details h3
+{
+	color:#C0392B;
 }

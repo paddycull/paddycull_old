@@ -96,7 +96,7 @@ p {
 /* This is the selector i used for my menu, it needs to be set as position:absolute; */
 .subMenu {
 	position: absolute;
-	top: 0px;
+	top: 500px;
 	height: 70px;
 	z-index: 1000;
 	width: 100%;
@@ -107,7 +107,7 @@ p {
 }
 
 .active {
-	color:#64B7B3 !important;
+	color:#c0392b !important;
 }
 
 .subMenu .inner {
@@ -135,7 +135,7 @@ p {
 
 /* SECTIONS */
 .sTop {
-	min-height: 550px;
+	min-height: 600px;
 	background:#e5e5e5;
 	color:#3d3d3d;
 	padding-top: 50px;
@@ -146,10 +146,8 @@ p {
 
 
 .s1 {
-	min-height: 500px;
-	background: #64B7B3;
-	color:white;
-	background-image: url('../images/notebook_bg.jpg');
+	background: #c0392b;
+	color:#222;
 	background-size: cover;
 }
 
@@ -157,6 +155,7 @@ p {
 .s2 {
 	min-height: 500px;
 	background: #3f3f3f;
+	color:white;
 }
 
 
@@ -164,4 +163,5 @@ p {
 	min-height: 700px;
 	background: #504f4f;
 }
+
 
