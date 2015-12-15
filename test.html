@@ -1,29 +1,6 @@
 <html>
 <head>
-	<script type="text/javascript">
-		var $contactForm = $('#contact-form');
-		$contactForm.submit(function(e) {
-			e.preventDefault();
-			$.ajax({
-				url: '//formspree.io/paddycull9@hotmail.com',
-				method: 'POST',
-				data: $(this).serialize(),
-				dataType: 'json',
-				beforeSend: function() {
-					$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
-				},
-				success: function(data) {
-					$contactForm.find('.alert--loading').hide();
-					$contactForm.append('<div class="alert alert--success">Message sent!</div>');
-				},
-				error: function(err) {
-					$contactForm.find('.alert--loading').hide();
-					$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
-				}
-			});
-		});	
-
-	</script>
+	<script type="text/javascript" src="test.js"></script>
 </head>
 
 <form id="contact-form" action="//formspree.io/paddycull9@hotmail.com" method="post">
