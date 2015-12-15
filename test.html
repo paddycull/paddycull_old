@@ -1,0 +1,41 @@
+<html>
+<head>
+	<script type="text/javascript">
+		var $contactForm = $('#contact-form');
+		$contactForm.submit(function(e) {
+			e.preventDefault();
+			$.ajax({
+				url: '//formspree.io/paddycull9@hotmail.com',
+				method: 'POST',
+				data: $(this).serialize(),
+				dataType: 'json',
+				beforeSend: function() {
+					$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+				},
+				success: function(data) {
+					$contactForm.find('.alert--loading').hide();
+					$contactForm.append('<div class="alert alert--success">Message sent!</div>');
+				},
+				error: function(err) {
+					$contactForm.find('.alert--loading').hide();
+					$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
+				}
+			});
+		});	
+
+	</script>
+</head>
+
+<form id="contact-form" action="//formspree.io/paddycull9@hotmail.com" method="post">
+	<input type="text" name="Name" placeholder="Name" required>
+	<input type="email" name="Email" placeholder="Email" required>
+	<textarea name="Message" cols="30" rows="6" placeholder="Message" required></textarea>
+	<!-- CONFIG -->
+	<input class="is-hidden" type="text" name="_gotcha">
+	<input type="hidden" name="_subject" value="Subject">
+	<input type="hidden" name="_cc" value="email@cc.com">
+	<!-- /CONFIG -->
+	<input class="submit" type="submit" value="Send">
+</form>
+
+<htmL>
