@@ -1,50 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Patrick  Cull</title>
+	<title>Patrick  Cull</title>
+	<meta charset="UTF-8">
+	<meta name = "keywords" content = "" />
+	<meta name = "description" content = "" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1 user-scalable=no">
 
-<meta name = "keywords" content = "" />
-<meta name = "description" content = "" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1 user-scalable=no">
+	<!--Fonts-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster:300,400' rel='stylesheet' type='text/css'>
 
-<!--Fonts-->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lobster:300,400' rel='stylesheet' type='text/css'>
+	<!--These three are for the gallery in 'Projects'-->
+	<link rel="stylesheet" type="text/css" href="css/default.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
 
-<!--These three are for the gallery in 'Projects'-->
-<link rel="stylesheet" type="text/css" href="css/default.css" />
-<link rel="stylesheet" type="text/css" href="css/component.css" />
-<script src="js/modernizr.custom.js"></script>
+	<!--These are for the nav bar which responds to each section-->
+	<link href="css/nav.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" 	src="js/jquery.smint.js"></script>
 
-<!--These are for the nav bar which responds to each section-->
-<link href="css/nav.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" 	src="js/jquery.smint.js"></script>
+	<!-- 
+	A way to put jQuery into no-conflict mode. Stops conflicts with the gallery jQuery - pass $ as a parameter
+	-->
+	<script>
+	 
+		jQuery.noConflict();
+		 
+		jQuery( document ).ready(function( $ ) {
 
-<!-- 
-A way to put jQuery into no-conflict mode. Stops conflicts with the gallery jQuery - pass $ as a parameter
--->
-<script>
- 
-jQuery.noConflict();
- 
-jQuery( document ).ready(function( $ ) {
+			$(document).ready( function() {
+		    $('.subMenu').smint({
+		    	'scrollSpeed' : 1000
+		    });
+		});
 
-	$(document).ready( function() {
-    $('.subMenu').smint({
-    	'scrollSpeed' : 1000
-    });
-});
+		});
+	</script>
 
-});
- 
- 
-</script>
-
-<!--My styles and favicon-->
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link rel="icon" type="image/png" href="images/logo.png">
+	<!--My styles and favicon-->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/png" href="images/logo.png">
 </head>
 
 <body>
@@ -162,8 +160,6 @@ jQuery( document ).ready(function( $ ) {
 		</div>
 
 	</div>
-
-	
 
 </div>
 </body>
