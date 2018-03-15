@@ -31,7 +31,7 @@ body, html {
 	padding-top: 80px;
 }
 
-.scroll
+/*.scroll
 {
 	position: relative;
 	top:50px;
@@ -43,6 +43,14 @@ body, html {
 	margin-bottom: 50px;
 }
 
+.scroll img
+{
+	height:30px;
+	vertical-align:middle;
+	margin-left:10px;
+}*/
+
+
 .logo
 {
 	margin-left: auto;
@@ -50,13 +58,6 @@ body, html {
 	display: block;
 	border-radius:5px;
 	width:200px;
-}
-
-.scroll img
-{
-	height:30px;
-	vertical-align:middle;
-	margin-left:10px;
 }
 
 .sTop h1
