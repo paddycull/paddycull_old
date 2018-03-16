@@ -40,7 +40,14 @@ h2 {
 p {
 	margin: 0 0 15px 0;
 }
+.menu-items
+{
 
+	margin-right:auto;
+	margin-left:auto;
+
+
+}
 .menuBtn {
 
 	background: center center no-repeat transparent;
@@ -93,7 +100,7 @@ p {
 	display: inline-block;
 	height: 70px;
 	line-height: 70px;
-	width: 12%;
+	width: 100px;
 	margin: 0px 0px 0 0;
 	text-decoration: none;
 	font-size: 16px;
