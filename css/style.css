@@ -2,6 +2,28 @@ body, html {
   height: 100%;
 }
 
+.section {
+	width: 100%;
+	min-width: 300px;
+	z-index: 10;
+	position: relative;
+	margin: 0 auto;
+	padding: 0 0 20px 0;
+}
+
+
+.inner {
+	width: 85%;
+	margin: 0 auto;
+	position: relative;
+	min-height: 50px;
+	min-width: 200px;
+	padding:30px 0;
+	font-size: 24px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	padding:30px 0;
+}
 
 .sTop h1
 {
@@ -30,26 +52,6 @@ body, html {
 	color: white;
 	padding-top: 80px;
 }
-
-/*.scroll
-{
-	position: relative;
-	top:50px;
-	bottom: 20px;
-	bottom:0;
-	text-align: center;
-	height:50px;
-	line-height: 50px;
-	margin-bottom: 50px;
-}
-
-.scroll img
-{
-	height:30px;
-	vertical-align:middle;
-	margin-left:10px;
-}*/
-
 
 .logo
 {
@@ -94,6 +96,20 @@ h1
 	text-shadow:3px 3px 3px #222;
 }
 
+.inner-info {
+	width: 85%;
+	margin: 0 auto;
+	position: relative;
+	padding:30px 0;
+	font-size: 24px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	padding:30px 0;
+	display: inline-flex;
+	flex-wrap:wrap;
+	min-width:400px;
+}
+
 .info
 {
 	width:300px;
@@ -103,6 +119,9 @@ h1
 	font-family: 'Verdana', sans-serif !important;
 	color:white;
 	display: inline-block;
+	flex-grow:1;
+	padding:15px;
+	min-width:300px;
 }
 .info img
 {
@@ -120,22 +139,6 @@ h1
 	text-align: center;
 }
 
-.code
-{
-	float: left;
-}
-
-.college
-{
-	display: inline-block;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.idea
-{
-	float:right;
-}
 
 /*Used to style project image headers*/
 .og-details h3
