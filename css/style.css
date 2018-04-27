@@ -135,6 +135,49 @@ h1
 }
 
 
+.contact_form{
+	margin-right: auto;
+	margin-left: auto;
+	width:80%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+input, textarea {
+    font-size: 0.8em;
+    font-family: 'proxima-nova-soft', sans-serif;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 0.9em;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+textarea{
+	height:200px;
+}
+
+input:focus, textarea:focus {
+	outline:none !important;
+	border: 2px solid #c0392b;
+	box-shadow: 0 0 5px #c0392b;
+}
+
+form input, form textarea {
+    margin-bottom: 0.5em;
+}
+
+button, a.button {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid #c0392b;
+    color: #c0392b;
+    background: white;
+    line-height: 1em;
+    padding: 0.6em 0.9em;
+    transition: all 0.3s ease-in-out;
+}
+
 /*Used to style project image headers*/
 .og-details h3
 {
