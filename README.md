@@ -1,10 +1,8 @@
-Vertical Fixed Navigation #2
+My Personal Website
 =========
 
-A smart vertical navigation, with round indicators that turn into labelled icons when the user interacts with them.
 
-[Article on CodyHouse](https://codyhouse.co/gem/vertical-fixed-navigation-2/)
+My own personal website. Uses a modified version of a website shown on CodyHouse.
 
-[Demo](https://codyhouse.co/demo/vertical-fixed-navigation-2/index.html)
+[My Website](https://www.paddycull.com)
  
-[Terms](https://codyhouse.co/terms/)
