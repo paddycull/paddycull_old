@@ -1,160 +1,86 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" class="no-js">
 <head>
-	<title>Patrick  Cull</title>
 	<meta charset="UTF-8">
-	<meta name = "keywords" content = "" />
-	<meta name = "description" content = "" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1 user-scalable=no">
-
-	<!--Fonts-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link href='https://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Lobster:300,400' rel='stylesheet' type='text/css'>
 
-	<!--These three are for the gallery in 'Projects'-->
-	<link rel="stylesheet" type="text/css" href="css/default.css" />
-	<link rel="stylesheet" type="text/css" href="css/component.css" />
-	<script src="js/modernizr.custom.js"></script>
-
-	<!--These are for the nav bar which responds to each section-->
-	<link href="css/nav.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" 	src="js/jquery.smint.js"></script>
-
-	<!-- 
-	A way to put jQuery into no-conflict mode. Stops conflicts with the gallery jQuery - pass $ as a parameter
-	-->
-	<script>
-	 
-		jQuery.noConflict();
-		 
-		jQuery( document ).ready(function( $ ) {
-
-			$(document).ready( function() {
-		    $('.subMenu').smint({
-		    	'scrollSpeed' : 1000
-		    });
-		});
-
-		});
-	</script>
-
-	<!--My styles and favicon-->
-	<link href="css/style.css" rel="stylesheet" type="text/css">
-	<link rel="icon" type="image/png" href="images/logo.png">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/custom.css"> <!-- Custom style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>Patrick Cull - Oracle DBA</title>
 </head>
-
 <body>
+<nav class="cd-vertical-nav">
+	<ul>
+		<li><a href="#section1" class="active"><span class="label">Home</span></a></li>
+		<li><a href="#section2"><span class="label">About</span></a></li>
+		<li><a href="#section3"><span class="label">Work</span></a></li>
+		<li><a href="#section4"><span class="label">Contact</span></a></li>
+	</ul>
+</nav><!-- .cd-vertical-nav -->
 
-	<div class="wrap">
+<button class="cd-nav-trigger cd-image-replace">Open navigation<span aria-hidden="true"></span></button>
 
-	  <div class="subMenu" >
-	 	<div class="menu-items">
-	 		<a href="#" id="sTop" class="subNavBtn">Home</a> 
-			<a href="#" id="s1" class="subNavBtn">About</a>
-			<a href="#" id="s2" class="subNavBtn">Projects</a>
-			<a href="#" id="s3" class="subNavBtn">Contact</a>
-		</div>
-		
-		
-				
+<section id="section1" class="cd-section">
+	<div class="spacer"></div>
+
+	<div class="content-wrapper">
+		<img class = "logo" src="images/flat_computer.png"/>
+		<h1>Hello, my name is Patrick Cull</h1>
+		<aside>I'm an Oracle DBA from Ireland</aside>
 	</div>
 
+	<div class="arrow-nav">
+		<a href="#section2" class="cd-scroll-down cd-image-replace">scroll down</a>
+	</div>
+</section><!-- cd-section -->
 
-	<div class="section sTop">
-		<div class="inner">
-		<img class = "logo" src="images/flat_red_computer.png"/>
-			<h1>Hello, my name is Patrick Cull</h1>
-			<aside>I'm an Oracle DBA from Ireland</aside>
+<section id="section2" class="cd-section">
+	<div class="spacer"></div>
 
-		</div>
-		<br class="clear">
+	<div class="content-wrapper">
+		<h2>About</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.</p>
 	</div>
 
-
-
-
-
-	<div class="section s1">
-		
-		<div class="inner-info">
-			<div class="info code">
-			<img src = "images/code.png"/>
-				I have a passion for web development, and work as a freelancer in my spare time.
-			</div>
-
-			<div class="info college">
-			<img src = "images/laptop.png"/>
-				I am a Computer Science student, and I am studying in Dublin Institute of Technology. I am currently in my third year.
-			</div>
-
-			<div class="info idea">
-			<img src = "images/idea.png"/>
-				I don't really have anything for this third column, but this lightbulb looks nice.
-			</div>
-
-		</div>
-
+	<div class="arrow-nav">
+		<a href="#section3" class="cd-scroll-down cd-image-replace">scroll down</a>
 	</div>
 
-	<div class="section s2">
-		<div class="inner">
-		Here are a few projects I've done, some were just for my own enjoyment and benefit, while others were done as a freelancer.
+</section><!-- cd-section -->
 
-		<div class="container">	
-			<div class="main">
-				<ul id="og-grid" class="og-grid">
-					<li>
-						<a href="http://paddycull.com/lunch" data-largesrc="images/lunch.JPG" data-title="StudentLunchDealz" data-description="StudentLunchDealz is a website I made for college, for a Business and Enterprise module. It was a landing page for a mobile app, more info can be found on the site iteself.">
-							<img src="images/thumbs/lunch.JPG" alt="img01"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/2.jpg" data-title="Veggies sunt bona vobis" data-description="Komatsuna prairie turnip wattle seed artichoke mustard horseradish taro rutabaga ricebean carrot black-eyed pea turnip greens beetroot yarrow watercress kombu.">
-							<img src="images/thumbs/2.jpg" alt="img02"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://cargocollective.com/jaimemartinez/" data-largesrc="images/3.jpg" data-title="Dandelion horseradish" data-description="Cabbage bamboo shoot broccoli rabe chickpea chard sea lettuce lettuce ricebean artichoke earthnut pea aubergine okra brussels sprout avocado tomato.">
-							<img src="images/thumbs/3.jpg" alt="img03"/>
-						</a>
-					</li>
-					<li>
-						<a href="http://paddycull9.tk" data-largesrc="images/1.jpg" data-title="Azuki bean" data-description="Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.">
-							<img src="images/thumbs/1.jpg" alt="img01"/>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div><!-- /container -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="js/grid.js"></script>
-		<script>
-			$(function() {
-				Grid.init();
-			});
-		</script>
+<section id="section3" class="cd-section">
+	<div class="spacer"></div>
 
-		</div>
-
+	<div class="content-wrapper">
+		<h2>Work</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.</p>
 	</div>
 
-	<div class="section s3">
-		<div class="inner">
-			If you'd like to get in touch, you can do so using the form below. 
-			<form class="contact_form" method="POST" action="https://formspree.io/paddycull9@hotmail.com">
-			  <input name="name" placeholder="Your name" type="text">
-			  <input name="email" placeholder="Your email" type="email">
-			  <textarea name="message" placeholder="Your message"></textarea>
-			  <button class="form_button" type="submit">Send</button>
+	<div class="arrow-nav">
+		<a href="#section4" class="cd-scroll-down cd-image-replace">scroll down</a>
+	</div>
+</section><!-- cd-section -->
 
-			  <input type="hidden" name="_subject" value="New Website Contact" />
-			</form>
+<section id="section4" class="cd-section">
+	<div class="spacer"></div>
+
+		<div class="content-wrapper">
+			<h2>Contact</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.</p>
 		</div>
 
-	</div>
-
-</div>
+	<div class="spacer"></div>
+</section><!-- cd-section -->
+	
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
 </html>
