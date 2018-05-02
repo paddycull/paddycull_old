@@ -407,8 +407,13 @@ Content Sections - basic style
   background: #64b7b3;
 }
 .cd-section:nth-of-type(even) {
-  background-color: #333;
+  background-color: #444;
 }
+
+.cd-section:nth-of-type(odd) p, .cd-section:nth-of-type(odd) h2{
+  color:#222 !important;
+}
+
 .content-wrapper {
   /* vertically align <div> inside <section> */
   align-self: center;
@@ -421,7 +426,8 @@ Content Sections - basic style
   width: 90%;
   margin: 0 auto;
   text-transform: uppercase;
-  line-height: 1.4;
+  line-height: 2;
+  font-size: 2em;
 }
 .cd-section h1 b, .cd-section h2 b {
   color: #584c5e;
@@ -430,7 +436,6 @@ Content Sections - basic style
   margin: 1em auto 0;
   line-height: 1.6;
   width: 80%;
-  --max-width: 680px;
   color: rgba(234, 242, 227, 0.6);
 }
 .spacer{

@@ -4,7 +4,7 @@ $(document).scroll(function () {
     // the top edge of its parent 
     $('.fade').each(function () {
         var t = $(this).parent().offset().top;
-        var t = t -200;
+        var t = t -250;
         if (y > t) {
             $(this).fadeIn();
         }
