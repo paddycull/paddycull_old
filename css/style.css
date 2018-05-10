@@ -423,11 +423,11 @@ Content Sections - basic style
   flex: 0 1 auto;
 }
 .cd-section h1, .cd-section h2 {
-  width: 90%;
   margin: 0 auto;
   text-transform: uppercase;
   line-height: 2;
   font-size: 2em;
+  text-align: center; 
 }
 .cd-section h1 b, .cd-section h2 b {
   color: #584c5e;
@@ -452,7 +452,20 @@ Content Sections - basic style
   .cd-section p {
     font-size: 2rem;
   }
+  .icon-hat{
+    margin-left: 100px;
+  }
 }
+
+
+
+@media only screen and (max-width: 800px) {
+.fade .content-wrapper{
+  flex-direction:column !important;
+}
+}
+
+
 .arrow-nav{
   display:flex;
   align-self: flex-end;
@@ -473,6 +486,16 @@ Content Sections - basic style
   width: 44px;
   height: 44px;
   background: url(../img/cd-arrow-bottom.svg) no-repeat center center;
+}
+
+.icon-hat {
+  display:inline-block;
+  background: url(../img/icon-hat.svg) no-repeat center center;
+  flex:1;
+  min-height: 130px;
+  min-width: 130px;
+    -webkit-filter: drop-shadow( 8px 8px 5px #111 ); 
+            filter: drop-shadow( 8px 8px 5px #111 );
 }
 
 /* -------------------------------- 

@@ -10,7 +10,7 @@
 	font-weight:300;
 	letter-spacing: -2px;
 	text-align: center;
-	line-height: 70px;
+	line-height: 60px;
 }
 
 #section1 h2{
@@ -41,4 +41,17 @@
 
 .fade{
 	display:none;
+	/*	padding:50px;
+	margin: -60px 30px 0;
+    border-radius: 6px;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12),0 8px 10px -5px rgba(0,0,0,.2);*/
+}
+
+.fade .content-wrapper{
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.inner-content{
+	flex:2 1 60%;
 }
