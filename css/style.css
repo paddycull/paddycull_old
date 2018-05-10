@@ -460,6 +460,15 @@ Content Sections - basic style
 
 
 @media only screen and (max-width: 800px) {
+#section1 h1 {
+  font-size: 2em !important;
+ }
+
+#section1 aside{
+  width:80% !important;
+ 
+}
+
 .fade .content-wrapper{
   flex-direction:column !important;
 }
@@ -494,7 +503,7 @@ Content Sections - basic style
   flex:1;
   min-height: 130px;
   min-width: 130px;
-    -webkit-filter: drop-shadow( 8px 8px 5px #111 ); 
+  -webkit-filter: drop-shadow( 8px 8px 5px #111 ); 
             filter: drop-shadow( 8px 8px 5px #111 );
 }
 
