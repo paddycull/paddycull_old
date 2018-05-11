@@ -13,11 +13,15 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Sintony", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #eaf2e3;
   background-color: #3a2c41;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1{
+  font-family:  "Sintony", sans-serif; 
 }
 
 a {
@@ -411,7 +415,7 @@ Content Sections - basic style
 }
 
 .cd-section:nth-of-type(odd) p, .cd-section:nth-of-type(odd) h2{
-  color:#222 !important;
+  color:#222;
 }
 
 .content-wrapper {
@@ -436,7 +440,7 @@ Content Sections - basic style
   margin: 1em auto 0;
   line-height: 1.6;
   width: 80%;
-  color: rgba(234, 242, 227, 0.6);
+  color: rgba(234, 242, 227, 0.9);
 }
 .spacer{
   width:100%;
