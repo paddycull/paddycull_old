@@ -90,7 +90,6 @@
 
 .panel p{
 	width:95%;
-	--color:rgba(234, 242, 227, 0.6) !important;
 	color:#EEE !important;
 	padding-bottom:20px;
 	font-size:1em;
@@ -105,7 +104,7 @@
 .panel h3{
 	margin-left:2.5%;
 	padding-top:5px;
-	color:#EEE !important;
+	color: #EEE !important;
 	font-size:1.3em;
 }
 
